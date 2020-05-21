@@ -1,3 +1,12 @@
+# -------------------------------------------
+# Python script to read MCP23017 IO Expander
+# and converto to keryboard press & release
+#
+# By Francesc Bofill
+# twitter: @kamencesc
+#
+# --------------------------------------------
+
 import smbus
 import time
 import keyboard
