@@ -16,6 +16,16 @@ You can add new path for cfg file and change some options (read below):
 Add to your /etc/rc.local file to launch at system strartup with " &" at the end of the line (and change to your original location):
 
     sudo python /home/pi/pyretrogame/pyretrogame.py &
+    
+My recomendation is to add this line if you are familiar with screen:
+
+    screen -dmS pyretrogame sudo python /home/pi/pyretrogame/pyretrogame.py debug 1
+
+With this you can acces to this screen via ssh and with this command:
+
+    screen -r pyretrogame
+
+And there you can see all debug text.
 
 ## Differences
 You can change from bus 1 to 0 by editing a variable on the py file
